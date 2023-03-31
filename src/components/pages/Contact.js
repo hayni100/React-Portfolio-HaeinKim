@@ -1,22 +1,87 @@
 import React from 'react';
+import { Button, Form, Input} from "antd";
+const layout = {
+  labelCol: {
+    span: 8
+  },
+  wrapperCol: {
+    span: 16
+  }
+};
+
+/* eslint-disable no-template-curly-in-string */
+const validateMessages = {
+  required: "${label} is required!",
+  types: {
+    email: "${label} is not a valid email!"
+  }
+};
+/* eslint-enable no-template-curly-in-string */
+
+const onFinish = (values) => {
+  console.log(values);
+};
 
 export default function Contact() {
   return (
     <div>
       <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <Form
+    {...layout}
+    name="nest-messages"
+    onFinish={onFinish}
+    style={{
+      maxWidth: 600
+    }}
+    validateMessages={validateMessages}
+  >
+    <Form.Item
+      name={["user", "name"]}
+      label="Name"
+      rules={[
+        {
+          required: true
+        }
+      ]}
+    >
+      <Input />
+    </Form.Item>
+    <Form.Item
+      name={["user", "email"]}
+      label="Email"
+      rules={[
+        {
+          type: "email",
+          required: "true"
+        }
+      ]}
+    >
+      <Input />
+    </Form.Item>
+
+    <Form.Item
+      name={["user", "message"]}
+      label="Message"
+      rules={[
+        {
+          required: "true"
+        }
+      ]}
+    >
+      <Input.TextArea />
+    </Form.Item>
+    <Form.Item
+      wrapperCol={{
+        ...layout.wrapperCol,
+        offset: 8
+      }}
+    >
+      <Button type="primary" htmlType="submit">
+        Submit
+      </Button>
+    </Form.Item>
+  </Form>
+    
     </div>
   );
 }

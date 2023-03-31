@@ -1,22 +1,34 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image'
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 export default function Home() {
   return (
     <div>
       <h1>About Me</h1>
-      <p>
-        <img src=''></img>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+      <Row xs={1} md={2} className="g-4">
+        <Col>
+             <Image 
+      rounded={true}
+      width="300"
+      src={require('../../assets/img/profile_img.png')}/>
+        </Col>
+        <Col>
+          <Card>
+            <Card.Body>
+              <Card.Text
+              style={{
+                fontSize: "20px"
+              }}>
+                   While working as a healthcare provider at major hospitals in Seattle, I saw great potential in using technology to improve healthcare access and outcomes for underserved communities.  Whether it's building a platform to connect patients with healthcare providers, developing a mobile app to promote health literacy, or conducting research to better understand the social determinants of health, I am committed to making a positive impact in the world through my work.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+    </Row>
+
     </div>
   );
 }
