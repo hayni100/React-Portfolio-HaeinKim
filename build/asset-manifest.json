@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio-HaeinKim/static/css/main.c2cab247.css",
+    "main.js": "/React-Portfolio-HaeinKim/static/js/main.037645ee.js",
+    "static/media/profile_img.png": "/React-Portfolio-HaeinKim/static/media/profile_img.3509e9cf6eeca357df3a.png",
+    "static/media/plantparent.png": "/React-Portfolio-HaeinKim/static/media/plantparent.8a572eda55b6104c4a23.png",
+    "static/media/sidehus.png": "/React-Portfolio-HaeinKim/static/media/sidehus.7495ba6758edeb14ad2e.png",
+    "static/media/wtw.png": "/React-Portfolio-HaeinKim/static/media/wtw.b2630a4951e17ef3cc5b.png",
+    "static/media/techblog.png": "/React-Portfolio-HaeinKim/static/media/techblog.6afe189a464159ff9663.png",
+    "static/media/scheduler.png": "/React-Portfolio-HaeinKim/static/media/scheduler.f5014c7880c81a4ced85.png",
+    "static/media/password.png": "/React-Portfolio-HaeinKim/static/media/password.3e232468521e1e1f2e48.png",
+    "static/media/resume.pdf": "/React-Portfolio-HaeinKim/static/media/resume.41c8f90d74daad975921.pdf",
+    "index.html": "/React-Portfolio-HaeinKim/index.html",
+    "main.c2cab247.css.map": "/React-Portfolio-HaeinKim/static/css/main.c2cab247.css.map",
+    "main.037645ee.js.map": "/React-Portfolio-HaeinKim/static/js/main.037645ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.037645ee.js"
+  ]
+}
