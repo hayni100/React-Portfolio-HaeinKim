@@ -1,0 +1,72 @@
+:root {
+    /* Custom Colors */
+    --eerie-black: #222222ff;
+    --white: #ffffffff;
+    --ultra-violet: #4b4e6dff;
+    --moonstone: #68959aff;
+  
+    /* Primary Colors */
+    --primary-color: var(--ultra-violet);
+    --primary-color-dark: #2e3175ff;
+    --primary-color-light: #a5a8d6ff;
+  
+    /* Secondary Colors */
+    --secondary-color: #5f5f5fff;
+    --secondary-color-dark: #3a3a3aff;
+    --secondary-color-light: #7d7d7dff;
+  
+    /* Accent Colors */
+    --accent-color: #17a2b8ff;
+    --accent-color-dark: #0f6674ff;
+    --accent-color-light: #35c1d8ff;
+  }
+  
+.trailsText {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    line-height: 80px;
+    color: #e38f92;
+    font-size: 18vw;
+    font-weight: 800;
+    /* letter-spacing: -0.05em; */
+    padding-top: 80px;
+   will-change: transform, opacity;
+    /* overflow: hidden; */
+    /* font-size: 20vw; */
+  }
+  
+  /* .trailsText > div {
+    padding-right: 0.05em;
+   overflow: hidden;
+  } */
+.title {
+    font-size: 5vw;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    align-items: center;
+    height: 80%;
+    justify-content: center;
+    padding: 20px
+  }
+  
+  @media (max-width: 320px) {
+ .trailsText {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    line-height: 80px;
+    color: #e38f92;
+    font-size: 4vw;
+    font-weight: 800;
+    /* letter-spacing: -0.05em; */
+    padding-top: 10px;
+   will-change: transform, opacity;
+ }
+.title {
+    font-size: 3px;
+}
+  }

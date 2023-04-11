@@ -13,6 +13,7 @@ export default function Home() {
              <Image 
       rounded={true}
       width="300"
+      padding="20px"
       src={require('../../assets/img/profile_img.png')}/>
         </Col>
         <Col>
